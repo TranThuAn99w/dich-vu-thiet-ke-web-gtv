@@ -1,0 +1,1156 @@
+#dich-vu-thiet-ke-web-body {
+    margin: 0;
+    .ss {
+      &__head {
+        // margin-top: 120px;
+        background: url("https://gtvseo.com/wp-content/uploads/2022/05/banner-heading.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 600px;
+        @include respond-phone{
+          background-position: top right;
+          height: 600px;
+          display: flex;
+          align-items: center;
+        }
+        .btn__link {
+            color: #fff;
+            &:last-child {
+              border: #276ae3 1px solid;
+              color: #276ae3;
+            }
+            &:hover {
+              transition: 0.3s all ease-out;
+              text-decoration: underline;
+            }
+          }
+          .content {
+            max-width: 550px;
+            padding: 120px 0 64px 0;
+            @include respond-phone{
+              background-color: rgba(255, 255, 255, 0.8);
+              padding: 48px;
+            }
+            h1{
+                max-width: 500px;
+            }
+            @include respond-tabPort {
+              max-width: 100%;
+              margin-top: 0;
+              margin-bottom: 30px;
+            }
+            
+          }
+      }
+      &__van-de {
+          padding-top: 0;
+          background-color: #fff;
+        .content {
+          &__head {
+            max-width: 500px;
+          }
+          &__cards {
+            grid-template-columns: repeat(3, 1fr);
+            @include respond-tabPort {
+              grid-template-columns: 1fr 1fr;
+            }
+            @include respond-phone {
+              grid-template-columns: 1fr;
+            }
+            .card {
+              text-align: center;
+              background-color: transparent;
+              box-shadow: none !important;
+              &__image {
+                margin-bottom: 16px;
+              }
+              &__text {
+                h5 {
+                  margin-bottom: 16px;
+                }
+              }
+            }
+          }
+        }
+      }
+      &__banner-2{
+        background: url("https://gtvseo.com/wp-content/uploads/2022/05/banner-2.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left;
+        height: 500px;
+      }
+      &__ban-muon{
+          .content{
+              &__head{
+                  h2{
+                      text-align: left;
+                  }
+              }
+              &__cards{
+                  grid-template-columns: 1fr !important;
+                  gap: 0 !important;    
+                  .card {
+                    background-color: #f5f5f5;
+                    box-shadow: none !important;
+                    padding-left: 0;
+                    .flex{
+                        align-items: center;
+                    }
+                    &__image {
+                        height: 100%;
+                      display: flex;
+                      align-items: center;
+                      background: #fff;
+                      padding: 24px;
+                      border-radius: 99px;
+                      margin-right: 40px;
+                      box-shadow: 0 10px 20px rgba(41, 44, 42, 0.07);
+                    }
+                  }
+              }
+          }
+          @include respond-phone{
+            .col-6.col{
+              width: 100%;
+            }
+            .col-6.flex{
+              display: none;
+            }
+          }
+      }
+      &__cameo{
+          padding-top: 0 !important;
+          h2{
+              text-align: left;
+          }
+          @include respond-phone{
+            .flex{
+              flex-direction: column ;
+            }
+            .col-6{
+              width: 100%;
+            }
+            img{
+              width: 100%;
+            }
+          }
+      }
+      &__so-huu {
+        padding-top: 0;
+        &.style-padding{
+            padding-top: 64px;
+            padding-bottom: 0;
+        }
+        .content {
+          &__head {
+            max-width: 540px;
+            margin-bottom: 32px;
+            h2 {
+              text-align: left;
+            }
+          }
+          &__cards{
+            grid-template-columns: 1fr 1fr !important;
+            .card {
+              background-color: #f5f5f5;
+              box-shadow: none !important;
+              padding-left: 0;
+              .flex{
+                align-items: center;
+                @include respond-phone{
+                  flex-direction: column;
+                }
+            }
+              &__image {
+                  height: 100%;
+                display: flex;
+                align-items: center;
+                background: #fff;
+                padding: 24px;
+                border-radius: 99px;
+                margin-right: 40px;
+                box-shadow: 0 10px 20px rgba(41, 44, 42, 0.07);
+                @include respond-phone{
+                  margin-right: 0;
+                  margin-bottom: 8px;
+                }
+              }
+              
+            }
+        }
+        }
+        
+      }
+      &__ve-dich-vu {
+        height: auto;
+        background: url("https://gtvseo.com/wp-content/uploads/2022/05/danh-cho-ai.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top center;
+        position: relative;
+        background-color: #f4f5f7;
+        @include respond-tabPort{
+          background: #276ae3;
+          a.btn{
+            background-color: #d7f3ff ;
+            color: #276ae3;
+          }
+        }
+        .content{
+            &__head{
+                max-width: 100%;
+                h2{
+                    text-align: left;
+                }
+            }
+            &__cards{
+              @include respond-phone{
+                grid-template-columns: 1fr 1fr;
+              }
+                .card{
+                    padding: 0 !important;
+                    border-radius: 8px !important;
+                    &__image{
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    &__text{
+                        padding: 16px;
+                        text-align: center;
+                        p{
+                            font-size: 18px;
+                            line-height: 32px;
+                            @include respond-phone{
+                              font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+      }
+      &__why-choose {
+          background-color: #fff;
+          padding-top: 0;
+        .content {
+        &__head {
+          max-width: 100%;
+        }
+        &__cards {
+          @include respond-tabPort {
+            grid-template-columns: 1fr 1fr;
+          }
+          @include respond-phone {
+            grid-template-columns: 1fr;
+          }
+          .card{
+              padding: 32px 16px;
+          }
+        }
+        }
+      }
+      &__su-can-thiet{
+        
+        .content{
+            &__head{
+                h2{
+                    text-align: left;
+                }
+            }
+            &__cards{
+                grid-template-columns: 1fr !important;
+                gap: 0 !important;    
+
+                .card {
+                  background-color: #f5f5f5;
+                  box-shadow: none !important;
+                  padding-left: 0;
+                  .flex{
+                      align-items: center;
+                      @include respond-phone{
+                        flex-direction: row;
+                      }
+                  }
+                  &__image {
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    background: #fff;
+                    padding: 24px;
+                    border-radius: 99px;
+                    margin-right: 40px;
+                    box-shadow: 0 10px 20px rgba(41, 44, 42, 0.07);
+                  }
+                  &__text{
+                      display: flex;
+                      align-items: center;
+                  }
+                }
+            }
+        }
+        @include respond-phone{
+          .flex{
+            flex-direction: column;
+          }
+          .col-6{
+            width: 100%;
+          }
+          .col-6.flex{
+            display: none;
+          }
+        }
+      }
+      &__doi-ngu-chuyen-gia {
+          padding-top: 0;
+        .content {
+            &__head {
+            max-width: 600px;
+            }
+            &__cards {
+            grid-template-columns: repeat(3, 1fr);
+            @include respond-tabPort {
+                grid-template-columns: 1fr;
+            }
+            @include respond-phone {
+                grid-template-columns: 1fr;
+            }
+            .card {
+                text-align: center;
+                background-color: transparent;
+                box-shadow: none !important;
+                &__image {
+                margin-bottom: 16px;
+                }
+            }
+            }
+        }
+      }
+      &__thanh-tuu {
+        background-image: url("https://gtvseo.com/wp-content/uploads/2022/05/cot-moc.png");
+        .content {
+          &__head {
+            p {
+              font-size: 48px;
+              line-height: 64px;
+              font-weight: 600;
+            }
+          }
+          &__boxs {
+            .border-x {
+              position: relative;
+              &::after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 96px;
+                top: 30px;
+                border-right: 1px solid white;
+                border-left: 1px solid white;
+                @include respond-tabPort {
+                  border-right: 0;
+                }
+              }
+            }
+            .border-r-x {
+              position: relative;
+              &::after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 96px;
+                top: 30px;
+                border-right: 1px solid white;
+                
+              }
+            }
+            .card {
+              background-color: transparent;
+              box-shadow: none;
+              margin-bottom: 16px;
+              p {
+                font-size: 17px;
+                line-height: 32px;
+                text-align: center;
+                @include respond-phone{
+                  font-size: 16px;
+                }
+                &.title {
+                  font-size: 48px;
+                  line-height: 64px;
+                  font-weight: 600;
+                  @include respond-phone {
+                    font-size: 28px;
+                    line-height: 40px;
+                  }
+                }
+              }
+            }
+          }
+          @include respond-phone {
+            .sm-col {
+              width: 50%;
+            }
+          }
+        }
+      }
+      &__quy-trinh {
+        .content {
+          .indication {
+            align-items: center;
+            margin-bottom: 16px;
+            .circle {
+              width: 24px;
+              height: 24px;
+            }
+            .line {
+              width: 150px;
+              height: 1px;
+              border-bottom: 2px dashed rgba(39, 106, 227, 0.4);
+              margin-left: 24px;
+            }
+          }
+          &__head{
+              max-width: 100%;
+          }
+          &__cards {
+            grid-template-columns: repeat(5, 1fr);
+            @include respond-tabLand {
+              grid-template-columns: repeat(3, 1fr);
+            }
+            @include respond-tabPort {
+              grid-template-columns: repeat(2, 1fr);
+              gap: 15px !important;
+            }
+            @include respond-phone {
+              grid-template-columns: repeat(1, 1fr);
+            }
+            gap: 30px;
+            .card {
+              padding: 0;
+              background-color: transparent;
+              box-shadow: none;
+            }
+          }
+        }
+      }
+      &__uu-dai {
+        padding-top: 0;
+        .content {
+          &__head {
+            max-width: 800px;
+          }
+          &__cards{
+            gap: 16px;
+            @include respond-phone{
+              grid-template-columns: 1fr 1fr;
+            }
+            .card{
+              .flex{
+                justify-content: flex-start;
+              }
+              &__price{
+                justify-content: space-between !important;
+                margin-bottom: 24px;
+                .range-price{
+                  font-weight: 800;
+                  font-size: 36px;
+                  line-height: 46px;
+                  @include respond-phone{
+                    font-size: 28px;
+                  }
+                }
+                .discount{
+                  font-size: 17px;
+                  line-height: 21px;
+                  color: #FF5250;
+                  @include respond-phone{
+                    font-size: 16px;
+                  }
+                }
+              }
+              &__title{
+                p{
+                  font-size: 28px;
+                  line-height: 34px;
+                  font-weight: 800;
+                }
+                span{
+                  font-size: 14px;
+                  line-height: 18px;
+                  color: #969BAB;
+                }
+              }
+              &__text{
+                min-height: 300px;
+                ul{
+                  padding-left: 20px;
+                  li{
+                    font-size: 15px;
+                    line-height: 20px;
+                    color: #969BAB;
+                    @include respond-phone{
+                      font-size: 13px;
+                    }
+                  }
+                }
+              }
+              .content__btns{
+                .btn{
+                  background: #d7f3ff !important;
+                  border-radius: 24px;
+                  color: #06B3FF;
+                }
+              }
+            }
+            .phu-hop-voi-ban{
+              min-height: 30px;
+            }
+            #danh-cho-ban{
+              color: white;
+              background: #276AE3;
+              box-shadow: 0px 42px 34px rgba(82, 67, 194, 0.295755);
+                span, li{
+                  color: white;
+                }
+                .card__price{
+                  .discount{
+                    color: #2AD5FF;
+                  }
+                }
+                .btn{
+                  background-color: #2AD5FF !important;
+                  color: #276AE3;
+                }
+                .phu-hop-voi-ban{
+                  justify-content: flex-end !important;
+                  span{
+                    background: #154396;
+                    border-radius: 13.5px;
+                    font-size: 10px;
+                    line-height: 14px;
+                    color: #2AD5FF;
+                    padding: 6px 10px;
+                  }
+                }
+            }
+            
+          }
+        }
+      }
+      &__cam-nhan {
+        padding-bottom: 86px;
+        background: linear-gradient(
+          80.86deg,
+          #2ad5ff -16%,
+          #22cfff -13.13%,
+          #0fc2ff -4.48%,
+          #04baff 4.45%,
+          #00b7ff 13.95%,
+          #276ae3 49.75%,
+          #4269e3 70.19%,
+          #5868e3 90.64%
+        );
+        .content {
+          position: relative;
+          &::before {
+            content: "";
+            width: 146px;
+            height: 149px;
+            background: url("https://gtvseo.com/wp-content/uploads/2021/12/hoc-vien-arrow.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: absolute;
+            right: -20px;
+            top: -5px;
+            @include respond-tabLand {
+              right: -10px;
+            }
+            @include respond-phone {
+              width: 100px;
+              height: 100px;
+              top: 60px;
+              right: 10px;
+            }
+          }
+          &::after {
+            content: "";
+            width: 146px;
+            height: 130px;
+            background-color: #5868e3;
+            opacity: 0.7;
+            position: absolute;
+            right: -20px;
+            top: -5px;
+            @include respond-tabLand {
+              right: -10px;
+            }
+            @include respond-phone {
+              width: 100px;
+              height: 100px;
+              top: 60px;
+              right: 10px;
+            }
+          }
+          &__head {
+              max-width: 100%;
+            h2 {
+              text-align: left;
+            }
+          }
+          .cmts {
+            z-index: 9;
+            .cmt {
+              &__text {
+                min-height: 132px;
+                background-color: #fff;
+                box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+                border-radius: 10px;
+                padding: 54px;
+                position: relative;
+                margin-bottom: 32px;
+                @include respond-tabLand {
+                  min-height: 140px;
+                }
+                @include respond-tabPort {
+                  min-height: 252px;
+                }
+                p {
+                  font-size: 16px;
+                  line-height: 24px;
+                  text-align: center;
+                }
+                &::after {
+                  content: "";
+                  width: 24px;
+                  height: 24px;
+                  background-color: #fff;
+                  position: absolute;
+                  bottom: -12px;
+                  left: 50%;
+                  transform: rotate(45deg);
+                  border-radius: 3px;
+                }
+              }
+              &__er {
+                .flex {
+                  justify-content: center;
+                  align-items: center;
+                }
+                .logo-er {
+                  width: 56px;
+                  height: 56px;
+                  img {
+                    border-radius: 99px;
+                    width: 100%;
+                  }
+                }
+              }
+            }
+            .slick-dots {
+              bottom: -50px;
+              li {
+                button {
+                  width: 15px;
+                  height: 15px;
+                  border-radius: 99px;
+                  &::before {
+                    width: 15px;
+                    height: 15px;
+                    font-size: 8px;
+                    line-height: 18px;
+                    color: #fff;
+                    border-radius: 99px;
+                    opacity: 1;
+                  }
+                }
+                &.slick-active {
+                  button {
+                    border: 3px solid #fff;
+                    &::before {
+                      color: transparent;
+                    }
+                  }
+                }
+              }
+            }
+            .slick-prev:before,
+            .slick-next:before {
+              color: #fff;
+              font-size: 30px;
+            }
+            @include respond-tabLand {
+              .slick-prev {
+                left: -10px;
+              }
+              .slick-next {
+                right: 0;
+              }
+            }
+          }
+        }
+      }
+      &__dang-ky {
+        .content {
+          &__head {
+            max-width: 540px;
+            @include respond-tabPort {
+              max-width: 90%;
+            }
+            h2 {
+              text-align: left;
+              @include respond-tabPort {
+                text-align: center;
+              }
+            }
+            ul {
+              padding-left: 24px;
+            }
+          }
+          @include respond-tabPort {
+            .flex {
+              flex-direction: column;
+            }
+          }
+        }
+      }
+      &__dang-ky-nhan-uu-dai{
+        padding-top: 0;
+        .content{
+          background: url("https://gtvseo.com/wp-content/uploads/2022/05/bg-form-nhan-uu-dai.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          #form-dang-ky-nhan-uu-dai{
+            background: linear-gradient(
+          80.86deg,
+          #2ad5ff -16%,
+          #22cfff -13.13%,
+          #0fc2ff -4.48%,
+          #04baff 4.45%,
+          #00b7ff 13.95%,
+          #276ae3 49.75%,
+          #4269e3 70.19%,
+          #5868e3 90.64%
+        );
+            .content__form{
+              margin-left: 165px;
+              @include respond-tabLand {
+                margin-left: 50px;
+              }
+              @include respond-phone {
+                margin-left: 30px;
+              }
+            }
+          }
+          #uu-dai-info{
+            .content__text{
+              max-width: 500px;
+              padding: 74px 48px;
+              background: rgba(255, 255, 255, 0.7);
+              margin:30px 30px 30px 0;
+            }
+            
+          }
+        }
+        @include respond-tabPort{
+          .flex{
+            flex-direction: column;
+          }
+          .col-6{
+            width: 100%;
+          }
+          #uu-dai-info{
+            .content__text{
+              margin: 16px !important;
+              padding: 48px !important;
+              ul{
+                padding-left: 0;
+                li{
+                  font-size: 16px !important;
+                }
+              }
+              
+            }
+          }
+        }
+      }
+      &__diem-noi-bat {
+        padding-top: 0;
+        .content {
+          &__head {
+            max-width: 540px;
+            margin-bottom: 32px;
+            h2 {
+              text-align: left;
+            }
+          }
+          &__cards {
+            grid-template-columns: 1fr 1fr;
+            @include respond-phone {
+              grid-template-columns: 1fr;
+            }
+            .card {
+              @include respond-tabPort {
+                .flex{
+                  flex-direction: column;
+                }
+              }
+              &__image {
+                margin-right: 30px;
+              }
+              &__text {
+                h5 {
+                  margin-bottom: 16px;
+                }
+              }
+            }
+          }
+        }
+      }
+      &__diem-doc-nhat {
+        background: linear-gradient(
+          89.1deg,
+          #2ad5ff -12.35%,
+          #22cfff -9.35%,
+          #0fc2ff -0.28%,
+          #04baff 9.07%,
+          #00b7ff 19.03%,
+          #276ae3 56.53%,
+          #4269e3 77.95%,
+          #5868e3 99.36%
+        );
+        .content {
+          &__head {
+            max-width: 600px;
+            @include respond-phone {
+              width: 100%;
+            }
+          }
+          &__cards {
+            grid-template-columns: 1fr;
+            padding: 15px;
+            .card {
+              background-color: #fff;
+              padding: 40px 32px;
+              &__image {
+                margin-bottom: 54px;
+                @include respond-tabPort{
+                  margin-bottom: 16px;
+                }
+              }
+              &__text {
+                h5 {
+                  margin-bottom: 16px;
+                }
+                
+              }
+            }
+          }
+          @include respond-tabPort{
+            .flex{
+              .col-4{
+                width: 50%;
+                .card{
+                  height: 195px;
+                }
+              }
+            }
+          }
+          @include respond-phone{
+            .flex{
+              .col-4{
+                width: 100%;
+                .card{
+                  height: auto;
+                }
+              }
+            }
+          }
+        }
+      }
+      &__chinh-sach{
+        padding-top: 0;
+        .content{
+          &__head{
+            h2{
+              text-align: left;
+            }
+          }
+          &__image{
+            img{
+              width: 100%;
+            }
+          }
+        }
+        @include respond-tabPort{
+          .flex{
+            flex-direction: column;
+          }
+          .col-6{
+            width: 100%;
+          }
+          
+        }
+      }
+      &__chuong-trinh-hoc {
+        padding-top: 0;
+  
+        .content__head {
+          h2 {
+            text-align: left;
+          }
+        }
+      }
+      &__chuong-trinh-hoc{
+        .content {
+          &__head {
+            max-width: 700px;
+            h2 {
+              text-align: center;
+            }
+          }
+          &__collapse {
+            max-width: 850px;
+            .accordion-contianer {
+              border: 3px solid #f5f5f5;
+              margin-bottom: 24px;
+              border-radius: 21px;
+            }
+            .accordion {
+              background-color: #fff;
+              color: #001a49;
+              font-weight: 600;
+              cursor: pointer;
+              padding: 18px 40px;
+              width: 100%;
+              text-align: left;
+              transition: 0.4s;
+              font-size: 20px;
+              line-height: 24px;
+              border-radius: 21px;
+              border: none;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              .btn {
+                width: 48px;
+                height: 48px;
+                background: rgba(86, 204, 242, 0.2);
+                mix-blend-mode: normal;
+                border-radius: 99px;
+                // margin-left: 32px;
+                .fa-angle-down {
+                  font-size: 20px;
+                  transition: 0.5s all ease-in-out;
+                }
+              }
+              &.active {
+                border-radius: 21px 21px 0 0;
+                .fa-angle-down {
+                  transform: rotate(180deg);
+                  transition: 0.5s all ease-in-out;
+                }
+                & + .panel {
+                  border-radius: 0 0 21px 21px;
+                }
+              }
+            }
+            .panel {
+              padding: 0 40px 18px;
+              background-color: white;
+              display: none;
+              overflow: hidden;
+              p,
+              li {
+                font-size: 16px;
+              }
+              ol {
+                padding-left: 16px;
+              }
+            }
+          }
+        }
+      }
+      &__chuyen-gia {
+        .content {
+          &__head {
+            max-width: 600px;
+            h2 {
+              text-align: left;
+            }
+          }
+          &__image {
+            img {
+              width: 474px;
+              height: 560px;
+              margin: auto;
+              @include respond-tabLand {
+                max-width: 434px;
+                max-height: 520px;
+              }
+              @include respond-phone{
+                max-width: 384px;
+                max-height: 460px;
+              }
+            }
+          }
+          &__text {
+            margin-right: 30px;
+            @include respond-tabPort {
+              margin-right: 0;
+              padding: 32px;
+            }
+            &-head {
+              h3 {
+                font-size: 40px;
+                line-height: 54px;
+              }
+              p {
+                font-size: 32px;
+                line-height: 40px;
+              }
+              @include respond-tabPort {
+                h3 {
+                  font-size: 34px;
+                  line-height: 45px;
+                }
+                p {
+                  font-size: 25px;
+                  line-height: 32px;
+                }
+              }
+            }
+          }
+        }
+        .slick-dots {
+          bottom: -50px;
+          li {
+            button {
+              width: 15px;
+              height: 15px;
+              border-radius: 99px;
+              &::before {
+                width: 15px;
+                height: 15px;
+                font-size: 8px;
+                line-height: 18px;
+                color: #276ae3;
+                opacity: 1;
+              }
+            }
+            &.slick-active {
+              button {
+                border: 3px solid #5868e3;
+                &::before {
+                  color: transparent;
+                }
+              }
+            }
+          }
+        }
+        .slick-prev:before,
+        .slick-next:before {
+          color: #5868e3;
+          font-size: 30px;
+        }
+        @include respond-tabLand {
+          .slick-prev {
+            left: 0;
+          }
+          .slick-next {
+            right: 0;
+          }
+        }
+        @include respond-tabPort {
+          .list-chuyen-gia {
+            .chuyen-gia {
+              .flex {
+                flex-direction: column;
+                .col-6 {
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+      &__khach-hang {
+        background-color: #f4f5f7;
+        .container {
+          .content {
+            &__head {
+              max-width: 300px;
+              display: flex;
+              align-items: center;
+              margin: 0;
+              h2{
+                text-align: left;
+              }
+              @include respond-phone{
+                margin: auto;
+                h2{
+                  text-align: center;
+                }
+              }
+            }
+            &__customer-logos {
+              .item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                // width: 170px;
+                height: 60px;
+                margin: 8px;
+              }
+              .flex {
+                align-items: center;
+                justify-content: center;
+              }
+            }
+            @include respond-phone{
+              flex-direction: column;
+              & > .col-4, & > .col-8{
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+      &__map {
+        background-color: #e3eef8;
+      }
+    }
+}
+// bo-sung
+#dich-vu-thiet-ke-web-body .ss__uu-dai .content__cards{
+  
+  .card__text{
+    min-height: 350px;
+    ul{
+      list-style: none;
+      padding-left: 0 !important;
+      li{
+        margin-bottom: 6px;
+        font-size: 14px !important;
+        i{
+          margin-right: 8px;
+          color: #276ae3;
+          font-size: 12px;
+          background: #D7F3FF;
+          padding: 5px;
+          border-radius: 100%;
+        }
+      }
+    }
+  }
+
+  
+  .content__btns{
+    .flex{
+      justify-content: center !important;
+    }
+  }
+}

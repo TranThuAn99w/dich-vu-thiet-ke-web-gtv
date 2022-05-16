@@ -1,0 +1,242 @@
+@import "mixins";
+
+.bg-primary {
+  &-red2 {
+    background-color: #ff5250;
+  }
+  &-blue4 {
+    background-color: #d7f3ff;
+  }
+  &-blue1 {
+    background-color: #276ae3;
+  }
+  &-light {
+    background-color: #fff;
+  }
+}
+.primary {
+  &-red2 {
+    color: #ff5250;
+  }
+  &-blue4 {
+    color: #d7f3ff;
+  }
+  &-blue1 {
+    color: #276ae3;
+  }
+  &-gray2 {
+    color: #4f4f4f;
+  }
+  &-light {
+    color: #fff;
+  }
+}
+.ss {
+  padding: 65px 0;
+  color: #18191f;
+  background-color: #f4f5f7;
+  .container{
+    width: calc(100% - 330px);
+    @include respond-tabLand {
+      width: calc(100% - 50px);
+    }
+    @include respond-phone {
+      width: calc(100% - 30px);
+    }
+  }
+  .container, .container-fluid{
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Inter", sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    p,
+    a,
+    li,
+    div,
+    span {
+      font-size: 18px;
+      line-height: 32px;
+      font-family: "Inter", sans-serif;
+    }
+    a,
+    .btn__link {
+      display: block;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    .btn__link {
+      font-size: 16px;
+      line-height: 24px;
+    }
+    p {
+      margin: 0 !important;
+      @include respond-phone {
+        font-size: 15px;
+        line-height: 26px;
+      }
+    }
+    h1 {
+      font-size: 54px;
+      line-height: 64px;
+      @include respond-tabPort {
+        font-size: 38px;
+        line-height: 54px;
+      }
+      @include respond-phone {
+        font-size: 28px;
+        line-height: 40px;
+      }
+      @include respond-super-mini-phone {
+        font-size: 24px;
+        line-height: 38px;
+      }
+    }
+    h2 {
+      font-size: 48px;
+      line-height: 64px;
+      font-weight: 800;
+      text-align: center;
+      @include respond-tabPort {
+        font-size: 38px;
+        line-height: 54px;
+      }
+      @include respond-phone {
+        font-size: 28px;
+        line-height: 40px;
+      }
+      @include respond-super-mini-phone {
+        font-size: 24px;
+        line-height: 38px;
+      }
+    }
+    h3 {
+      font-size: 24px;
+      line-height: 32px;
+      @include respond-phone {
+        font-size: 18px;
+        line-height: 28px;
+      }
+    }
+    h5 {
+      font-size: 24px;
+      line-height: 32px;
+      @include respond-phone {
+        font-size: 18px;
+        line-height: 28px;
+      }
+    }
+    h6 {
+      font-size: 20px;
+      line-height: 30px;
+      font-weight: 500;
+      @include respond-phone {
+        font-size: 18px;
+        line-height: 26px;
+      }
+    }
+    .content {
+      &__head {
+        max-width: 600px;
+        &.uppercase {
+          text-transform: uppercase;
+          h2 {
+            font-size: 40px;
+            line-height: 64px;
+          }
+        }
+      }
+      &__btns {
+        width: 100%;
+        @include respond-phone {
+          .flex {
+            justify-content: center;
+          }
+        }
+        .btn {
+          min-width: 100px;
+          padding: 12px 32px;
+          text-align: center;
+          border-radius: 6px;
+          @include respond-tabPort {
+            padding: 10px 15px;
+            font-size: 16px;
+          }
+          @include respond-phone {
+            padding: 5px 15px;
+            font-size: 14px;
+          }
+        }
+      }
+      &__cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+        @include respond-tabLand {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        @include respond-phone {
+          grid-template-columns: repeat(1, 1fr);
+        }
+        .card {
+          border-radius: 6px;
+          padding: 16px;
+          box-shadow: 0 10px 20px rgba(41, 44, 42, 0.07);
+          background-color: #fff;
+          p {
+            font-size: 16px;
+            line-height: 26px;
+          }
+          .flex.flex-column {
+            height: 100%;
+            justify-content: space-between;
+          }
+          &__icon {
+            @include respond-phone {
+              height: 62px;
+              img {
+                height: 100%;
+              }
+            }
+          }
+        }
+      }
+      &__boxs {
+        .flex {
+          justify-content: center;
+        }
+        .card.box {
+          border-radius: 6px;
+          padding: 16px;
+          box-shadow: 0 10px 20px rgba(41, 44, 42, 0.07);
+          background-color: #fff;
+          p {
+            font-size: 16px;
+            line-height: 26px;
+          }
+          .flex.flex-column {
+            height: 100%;
+            justify-content: space-between;
+          }
+          &__icon {
+            @include respond-phone {
+              height: 62px;
+              img {
+                height: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
