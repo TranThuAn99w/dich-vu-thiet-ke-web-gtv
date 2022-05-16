@@ -529,8 +529,7 @@
 }
 
 #dich-vu-thiet-ke-web-body .ss__so-huu.style-padding {
-  padding-top: 64px;
-  padding-bottom: 0;
+  padding: 64px 0;
 }
 
 #dich-vu-thiet-ke-web-body .ss__so-huu .content__head {
@@ -1008,6 +1007,9 @@
   font-size: 15px;
   line-height: 20px;
   color: #969BAB;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media (max-width: 600px) {
@@ -1455,14 +1457,6 @@
   }
 }
 
-#dich-vu-thiet-ke-web-body .ss__chuong-trinh-hoc {
-  padding-top: 0;
-}
-
-#dich-vu-thiet-ke-web-body .ss__chuong-trinh-hoc .content__head h2 {
-  text-align: left;
-}
-
 #dich-vu-thiet-ke-web-body .ss__chuong-trinh-hoc .content__head {
   max-width: 700px;
 }
@@ -1666,7 +1660,13 @@
 }
 
 #dich-vu-thiet-ke-web-body .ss__khach-hang {
-  background-color: #f4f5f7;
+  background-color: #fff;
+}
+
+#dich-vu-thiet-ke-web-body .ss__khach-hang .container .content {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #dich-vu-thiet-ke-web-body .ss__khach-hang .container .content__head {
@@ -1677,7 +1677,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0;
 }
 
 #dich-vu-thiet-ke-web-body .ss__khach-hang .container .content__head h2 {
@@ -1685,12 +1684,17 @@
 }
 
 @media (max-width: 600px) {
-  #dich-vu-thiet-ke-web-body .ss__khach-hang .container .content__head {
-    margin: auto;
-  }
   #dich-vu-thiet-ke-web-body .ss__khach-hang .container .content__head h2 {
     text-align: center;
   }
+}
+
+#dich-vu-thiet-ke-web-body .ss__khach-hang .container .content__customer-logos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 64px;
 }
 
 #dich-vu-thiet-ke-web-body .ss__khach-hang .container .content__customer-logos .item {
@@ -1703,8 +1707,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 60px;
-  margin: 8px;
 }
 
 #dich-vu-thiet-ke-web-body .ss__khach-hang .container .content__customer-logos .flex {
@@ -1724,6 +1726,9 @@
             flex-direction: column;
   }
   #dich-vu-thiet-ke-web-body .ss__khach-hang .container .content > .col-4, #dich-vu-thiet-ke-web-body .ss__khach-hang .container .content > .col-8 {
+    width: 100%;
+  }
+  #dich-vu-thiet-ke-web-body .ss__khach-hang .container .content img {
     width: 100%;
   }
 }
