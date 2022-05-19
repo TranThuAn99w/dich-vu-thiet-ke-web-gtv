@@ -996,7 +996,7 @@
 }
 
 #dich-vu-thiet-ke-web-body .ss__uu-dai .content__cards .card__text {
-  min-height: 300px;
+  min-height: 400px;
 }
 
 #dich-vu-thiet-ke-web-body .ss__uu-dai .content__cards .card__text ul {
@@ -1735,10 +1735,6 @@
 
 #dich-vu-thiet-ke-web-body .ss__map {
   background-color: #e3eef8;
-}
-
-#dich-vu-thiet-ke-web-body .ss__uu-dai .content__cards .card__text {
-  min-height: 350px;
 }
 
 #dich-vu-thiet-ke-web-body .ss__uu-dai .content__cards .card__text ul {
